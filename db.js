@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 // const mongoURl = 'mongodb://localhost:27017/firstdatabase';
-const mongoURl = process.env.mongoURl
+const mongoURl = process.env.mongourl
  mongoose.connect(mongoURl);
  const db = mongoose.connection;
  // connection between mongodb and express;
