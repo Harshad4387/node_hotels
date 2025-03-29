@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const mongoURl = 'mongodb://localhost:27017/firstdatabase';
  mongoose.connect(mongoURl);
  const db = mongoose.connection;
+ // connection between mongodb and express;
 // event listeners 
 db.on('connected' , ()=>
 {
