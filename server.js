@@ -5,6 +5,11 @@ require('dotenv').config();
 const bodyparser = require('body-parser');
 app.use(bodyparser.json())
 const port = process.env.PORT || 3000 ;
+
+app.get('/' , (req,res)=>
+{
+    res.send("welcome to hotel");
+})
 // routes import and calls
 const personroutes = require('./routes/personroutes')
 app.use('/Person',personroutes);
